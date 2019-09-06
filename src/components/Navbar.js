@@ -11,7 +11,7 @@ class Navbar extends Component{
         const { total } = this.props;
 
         return(
-            <div className="navbar">
+            <div className="navbar" data-test="navbarComponent">
                 <nav>
                     <input type="checkbox" id="nav" className="hidden" />
                     <label htmlFor="nav" className="nav-btn">

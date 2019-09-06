@@ -32,7 +32,7 @@ export const remove = (data) => {
     return { type : REMOVE, payload : data };
 };
 
-const initialState = {
+export const initialState = {
     pending : false,
     error : false,
     repeated : false,
