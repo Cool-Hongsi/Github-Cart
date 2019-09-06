@@ -1,11 +1,17 @@
 import React from 'react';
 // import { shallow } from 'enzyme';
 import Navbar from './Navbar';
-
 import { checkProps } from '../Utils/index';
+// import { checkProps, findByTestAttr } from '../Utils/index';
 
-// import { store } from '../index';
-// import { Provider } from 'react-redux';
+// setUp function usually stay in test file becuase of initial setting up function (shallow)
+// const setUp = (props={}) => {
+//     const component = shallow(<Navbar {...props} />).childAt(0).dive(); // shallow function acts as rendering <Header /> Component
+//     // console.log(component.debug()); // check what shallow function is doing
+//     return component;
+//     in order to use shallow method from enzyme,
+//     should replace the version of 'react' , 'react-redux' from package.json with previous version.
+// };
 
 describe('Navbar component', () => {
 
@@ -20,20 +26,24 @@ describe('Navbar component', () => {
         })
     });
 
-    // describe('Renders', () => {
+    // describe('Have props', () => {
     //     let wrapper;
     //     beforeEach(() => {
     //         const props = {
-    //             total : 123
+    //             title : 123
     //         };
 
-    //         wrapper = shallow(<Provider store={store}><Navbar {...props} /></Provider>).dive();
+    //         wrapper = setUp(props);
     //     });
 
-    //     it('Should Render Navbar Component ', () => {
-    //         const navbar = findByTestAttr(wrapper, 'navbarComponent');
-    //         expect(navbar.length).toBe(1);
+    //     it('Should render without errors', () => {
+    //         const component = findByTestAttr(wrapper, 'navbarComponent');
+    //         expect(component.length).toBe(1);
+    //     });
+
+    //     it('Should render a nav-wrapper', () => {
+    //         const navwrapper = findByTestAttr(wrapper, 'navwrapper');
+    //         expect(navwrapper.length).toBe(1);
     //     });
     // });
-
 });
