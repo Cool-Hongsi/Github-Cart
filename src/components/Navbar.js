@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types';
 
 import './scss/Navbar.scss';
 
@@ -48,3 +49,8 @@ const mapStateToProps = (state) => {
 export default connect(
     mapStateToProps
 )(Navbar);
+
+// Validate props
+Navbar.propTypes = {
+    total : PropTypes.number
+};

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './scss/Github.scss';
+import PropTypes from 'prop-types';
 
 export default class Github extends Component{
 
@@ -71,3 +72,18 @@ export default class Github extends Component{
         )
     }
 }
+
+// Validate props
+Github.propTypes = {
+    pending : PropTypes.bool,
+    error : PropTypes.bool,
+    repeated : PropTypes.bool,
+    data : PropTypes.arrayOf(PropTypes.shape({
+        login : PropTypes.string,
+        id : PropTypes.number,
+        avatar_url : PropTypes.string,
+        public_repos : PropTypes.string,
+        html_url : PropTypes.string,
+        quantity : PropTypes.number
+    }))
+};

@@ -1,5 +1,6 @@
 import React from 'react';
 import './scss/Cart.scss';
+import PropTypes from 'prop-types';
 
 const Cart = ( { total, newData, onSelectedIncrement, onSelectedDecrement, onSelectedRemove } ) => {
     return(
@@ -41,3 +42,16 @@ const Cart = ( { total, newData, onSelectedIncrement, onSelectedDecrement, onSel
 };
 
 export default Cart;
+
+// Validate props
+Cart.propTypes = {
+    total : PropTypes.number,
+    newData : PropTypes.arrayOf(PropTypes.shape({
+        login : PropTypes.string,
+        id : PropTypes.number,
+        avatar_url : PropTypes.string,
+        public_repos : PropTypes.string,
+        html_url : PropTypes.string,
+        quantity : PropTypes.number
+    }))
+};
