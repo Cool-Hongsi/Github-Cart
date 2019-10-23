@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Github-Cart/static/css/main.4b01e57d.chunk.css",
+    "main.js": "/Github-Cart/static/js/main.1c8a6512.chunk.js",
+    "main.js.map": "/Github-Cart/static/js/main.1c8a6512.chunk.js.map",
+    "runtime~main.js": "/Github-Cart/static/js/runtime~main.8b4cec43.js",
+    "runtime~main.js.map": "/Github-Cart/static/js/runtime~main.8b4cec43.js.map",
+    "static/js/2.67630923.chunk.js": "/Github-Cart/static/js/2.67630923.chunk.js",
+    "static/js/2.67630923.chunk.js.map": "/Github-Cart/static/js/2.67630923.chunk.js.map",
+    "index.html": "/Github-Cart/index.html",
+    "precache-manifest.9e8fa8efffa925f1f6ddd95f056cfe3b.js": "/Github-Cart/precache-manifest.9e8fa8efffa925f1f6ddd95f056cfe3b.js",
+    "service-worker.js": "/Github-Cart/service-worker.js",
+    "static/css/main.4b01e57d.chunk.css.map": "/Github-Cart/static/css/main.4b01e57d.chunk.css.map",
+    "static/media/index.scss": "/Github-Cart/static/media/color-design-flora-1166644.095820eb.jpg"
+  }
+}
