@@ -16,6 +16,7 @@ export default class App extends Component{
 
           <Switch>
             <Route exact path="/" component={GithubContainer} />
+            <Route path="/Github-Cart" component={GithubContainer} />
             <Route path="/cart" component={CartContainer} />
           </Switch>
         </div>
