@@ -21,7 +21,7 @@ class Navbar extends Component{
                     </label>
 
                     <div className="logo">
-                        <a href="/">Github Cart</a>
+                        <Link to="/">Github Cart</Link>
                     </div>
 
                     <div className="nav-wrapper" data-test="navwrapper">
